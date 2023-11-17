@@ -1,0 +1,238 @@
+
+body{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 55px;
+    background-color: #ffffff;
+    
+    width: 1440px;
+    height: 1024px;
+    color: #000000;
+}
+
+
+h1{
+position: absolute;
+width: 195px;
+height: 55px;
+left: 622px;
+top: 96px;
+
+font-family: letra1;
+font-style: normal;
+font-weight: 400;
+font-size: 48px;
+line-height: 55px;
+
+color: #000000;
+}
+
+.Usu{
+position: absolute;
+width: 111px;
+height: 37px;
+left: 469px;
+top: 218px;
+font-family: letra1;
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 37px;
+
+color: #000000;
+}
+
+
+.Corre{
+position: absolute;
+width: 98px;
+height: 37px;
+left: 466px;
+top: 341px;
+
+font-family: letra1;
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 37px;
+
+color: #000000;
+}
+
+.Contra{
+
+position: absolute;
+width: 166px;
+height: 37px;
+left: 471px;
+top: 470px;
+
+font-family: letra1;
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 37px;
+
+
+color: #000000;
+}
+
+.Contra2{
+
+position: absolute;
+width: 316px;
+height: 37px;
+left: 466px;
+top: 592px;
+
+font-family: letra1;
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 37px;
+
+color: #000000;
+}
+
+p{
+
+text-align: center;
+
+font-family: letra1;
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 37px;
+text-decoration-line: underline;
+
+color: #0094FF;
+}
+
+#inputusuario{
+
+
+position: absolute;
+width: 500px;
+height: 50px;
+left: 471px;
+top: 273px;
+
+background: #FFFFFF;
+border: 4px solid #000000;
+
+font-family: 'Arial';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 37px;    
+}
+
+#inputcorreo{
+
+position: absolute;
+width: 500px;
+height: 50px;
+left: 468px;
+top: 396px;
+
+background: #FFFFFF;
+border: 4px solid #000000;
+
+font-family: 'Arial';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 37px;    
+}
+
+#inputcontra{
+
+position: absolute;
+width: 500px;
+height: 50px;
+left: 473px;
+top: 525px;
+
+background: #FFFFFF;
+border: 4px solid #000000;
+
+font-family: 'Arial';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 37px;    
+}
+
+#inputcontra1{
+/* Rectangle 7 */
+
+position: absolute;
+width: 500px;
+height: 50px;
+left: 468px;
+top: 647px;
+
+background: #FFFFFF;
+border: 4px solid #000000;
+
+font-family: 'Arial';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 37px;    
+}
+
+#boton1{
+position: absolute;
+top: 103%;
+left: 50%;
+width: 500px;
+transform: translate(-50%, -50%);
+height: 100px;
+
+background: #D9D9D9;
+border: 5px solid #000000;
+border-radius: 100px;
+
+font-family: letra1;
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 37px;   
+}
+
+/* Rectangle 15 */
+#canva{
+position: absolute;
+width: 300px;
+height: 200px;
+left: 978px;
+top: 179px;
+
+background: #D9D9D9;
+}
+
+.card {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: 70%;
+    margin-top:7%;
+}
+.card p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.form-floating{
+    width: 50%;
+}
+aside{
+    margin-left: 70%;
+    margin-bottom: 90%;
+}
+
+.text-xl-start{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 40px;
+
+}

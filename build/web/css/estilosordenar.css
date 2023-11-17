@@ -1,0 +1,133 @@
+/* Estilos para el sidebar */
+
+@font-face {
+    font-family: 'MiFuente';
+    src: url(../graficos/Foodpacker.otf) format('truetype');
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #CCCCCC;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover,
+.offcanvas a:focus {
+    color: #000;
+    filter: saturate(50%) brightness(80%);
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.topnav {
+    background-color: #FFCC00;
+    color: #000;
+}
+
+#title {
+    font-family: 'MiFuente';
+    color: orangered;
+    font-size: 30px;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    color: black;
+}
+
+.topnav a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+a svg {
+    transition: all .5s ease;
+
+    &:hover {
+        transform: rotate(180deg);
+    }
+}
+
+
+footer {
+    background-color: #CCCCCC;
+    align-self: flex-end;
+    width: 100%;
+    height: auto;
+}
+
+
+
+.redes {
+    font-size: 50px;
+}
+
+a {
+    color: #003366;
+}
+
+a:hover {
+    color: #003366;
+    filter: saturate(50%) brightness(80%);
+}
+
+.fade-in {
+    animation: fadeInAnimation ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

@@ -1,0 +1,181 @@
+/* Estilos para el sidebar */
+
+@font-face {
+    font-family: 'MiFuente';
+    src: url(../graficos/Foodpacker.otf) format('truetype');
+}
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #CCCCCC;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover,
+.offcanvas a:focus {
+    color: #000;
+    filter: saturate(50%) brightness(80%);
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.topnav {
+    background-color: #FFCC00;
+    color: #000;
+}
+
+#title {
+    font-family: 'MiFuente';
+    color: orangered;
+    font-size: 30px;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    color: black;
+}
+
+.topnav a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+#nav-icon {
+    transition: all .5s ease;
+
+    &:hover {
+        transform: rotate(180deg);
+    }
+}
+#cart-icon:hover {
+    animation: bounce 0.5s;
+}
+
+@keyframes bounce {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+#cart-circle {
+    transition: transform 0.3s;
+}
+
+#cart-icon:hover #cart-circle {
+    transform: rotate(360deg);
+}
+
+footer {
+    background-color: #CCCCCC;
+}
+
+
+.redes {
+    font-size: 50px;
+}
+
+a {
+    color: #003366;
+}
+
+a:hover {
+    color: #003366;
+    filter: saturate(50%) brightness(80%);
+}
+
+.container-scroll {
+    overflow-x: scroll;
+    white-space: nowrap;
+    scrollbar-width: none;
+    /* Oculta la barra de desplazamiento en Firefox */
+    -ms-overflow-style: none;
+    /* Oculta la barra de desplazamiento en IE 10+ */
+    scroll-behavior: smooth;
+    /* Agrega una animación suave al desplazarse */
+    scroll-snap-type: x mandatory;
+    /* Obliga a los elementos a hacer scroll por completo */
+
+}
+
+.container-scroll::-webkit-scrollbar {
+    display: none;
+    /* Oculta la barra de desplazamiento en Chrome, Safari y Opera */
+}
+
+.card {
+    display: inline-block;
+    width: 210px;
+    margin-right: 20px;
+    scroll-snap-align: start;
+    /* Asegura que las cards se alineen correctamente */
+    overflow-wrap: break-word;
+}
+
+.scroll-left-btn,
+.scroll-right-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.scroll-left-btn {
+    left: 10px;
+}
+
+.scroll-right-btn {
+    right: 10px;
+}

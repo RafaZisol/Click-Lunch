@@ -1,0 +1,247 @@
+@font-face {
+    font-family: 'MiFuente';
+    src: url(../graficos/Foodpacker.otf) format('truetype');
+  }
+  
+  body {
+    background-image: url('../graficos/imagenes/animado.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  footer {
+    background-color: #CCCCCC;
+  }
+  
+  form {
+    background-color: #FFFFFF;
+  
+  }
+  
+  h1 {
+    color: black;
+  }
+  
+  a {
+    color: #003366;
+  }
+  
+  a:hover {
+    color: #003366;
+    filter: saturate(50%) brightness(80%);
+  }
+  
+  /* Estilos para el sidebar */
+  
+  .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #CCCCCC;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover,
+  .offcanvas a:focus {
+    color: #000;
+    filter: saturate(50%) brightness(80%);
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  body {
+    overflow-x: hidden;
+  }
+  
+  .topnav {
+    background-color: #FFCC00;
+    color: #000;
+  }
+  
+  #title{
+    font-family:'MiFuente' ;
+    color: orangered;
+    font-size: 30px;
+  }
+  
+  .topnav a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+    color: black;
+  }
+  
+  .topnav a.active {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {
+      padding-top: 15px;
+    }
+  
+    .sidenav a {
+      font-size: 18px;
+    }
+  }
+  
+  a svg {
+    transition: all .5s ease;
+  
+    &:hover {
+      transform: rotate(180deg);
+    }
+  }
+  
+  
+  .redes {
+    font-size: 50px;
+    color: #FFCC00;
+  }
+  
+  .form_main {
+    width: 35vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFFFFF;
+    padding: 30px 30px 30px 30px;
+    border-radius: 30px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.062);
+  }
+  
+  .heading {
+    font-size: 2.5em;
+    color: #2e2e2e;
+    font-weight: 700;
+    margin: 15px 0 30px 0;
+  }
+  
+  .inputContainer {
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .inputIcon {
+    position: absolute;
+    left: 10px;
+  }
+  
+  .inputField {
+    width: 100%;
+    height: 40px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid rgb(173, 173, 173);
+    border-radius: 30px;
+    margin: 10px 0;
+    color: black;
+    font-size: .8em;
+    font-weight: 500;
+    box-sizing: border-box;
+    padding-left: 30px;
+  }
+  
+  .inputField:focus {
+    outline: none;
+    border-bottom: 2px solid #FFCC00;
+  }
+  
+  .inputField::placeholder {
+    color: rgb(80, 80, 80);
+    font-size: 1em;
+    font-weight: 500;
+  }
+  
+  #button {
+    position: relative;
+    width: 100%;
+    border: 2px solid #FFCC00;
+    background-color: #FFCC00;
+    height: 40px;
+    color: white;
+    font-size: .8em;
+    font-weight: 500;
+    letter-spacing: 1px;
+    border-radius: 30px;
+    margin: 10px;
+    cursor: pointer;
+    overflow: hidden;
+    color: black;
+  }
+  
+  #button::after {
+    content: "";
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.253);
+    height: 100%;
+    width: 150px;
+    top: 0;
+    left: -200px;
+    border-bottom-right-radius: 100px;
+    border-top-left-radius: 100px;
+    filter: blur(10px);
+    transition-duration: .5s;
+  }
+  
+  #button:hover::after {
+    transform: translateX(600px);
+    transition-duration: .5s;
+  }
+  
+  .signupContainer {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .signupContainer p {
+    font-size: 1em;
+    font-weight: 500;
+    color: black;
+  }
+  
+  .signupContainer a {
+    font-size: .7em;
+    font-weight: 500;
+    background-color: #003366;
+    color: white;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 20px;
+  }

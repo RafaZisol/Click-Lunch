@@ -1,0 +1,263 @@
+@font-face {
+    font-family: poppins;
+    src: url(../graficos/Poppins.ttf);
+}
+@font-face {
+    font-family: MiFuente;
+    src: url(../graficos/Foodpacker.otf);
+}
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #CCCCCC;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover,
+.offcanvas a:focus {
+    color: #000;
+    filter: saturate(50%) brightness(80%);
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+body {
+    overflow-x: hidden;
+    height: 100vh; 
+    justify-content: center; 
+    align-items: flex-start;
+    background-image: url('../img/fondoordenar.svg');
+    background-size: cover;
+    font-family: poppins;
+    font-size: small;
+    max-height: 120vh;
+}
+
+
+.topnav {
+    background-color: #FFCC00;
+    color: #000;
+}
+
+#title {
+    font-family: 'MiFuente';
+    color: orangered;
+    font-size: 30px;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    color: black;
+}
+
+.topnav a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+footer {
+    background-color: #CCCCCC;
+    position: absolute;
+    width: 100%;
+    top: 100%;
+}
+.redes {
+    font-size: 50px;
+}
+
+a {
+    color: #006eff;
+}
+
+a:hover {
+    color: #003366;
+    filter: saturate(50%) brightness(80%);
+}
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+#nav-icon {
+    transition: all .5s ease;
+
+    &:hover {
+        transform: rotate(180deg);
+    }
+}
+#cart-icon:hover {
+    animation: bounce 0.5s;
+}
+
+@keyframes bounce {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+#cart-circle {
+    transition: transform 0.3s;
+}
+
+#cart-icon:hover #cart-circle {
+    transform: rotate(360deg);
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.cardd {
+    display: flex;
+    align-items: center;
+    width: 300px;
+    height: 350px;
+    margin: 10% auto 0;
+    background-color: #fff;
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+    transition: 0.5s ease-in-out;
+  }
+  
+  
+
+
+.cardd:hover{
+    width: 600px;
+
+}
+.cardd .imgBox{
+    position: relative;
+    min-width: 300px;
+    width: 300px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.cardd .imgBox img{
+    width: 80%;
+}
+.cardd .detailss{
+    position: relative;
+    min-width: 300px;
+    background: #003366;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    color: #fff;
+}
+.cardd .detailss::before{
+    content: " ";
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-bottom: 10px solid transparent;
+    border-top: 10px solid transparent;
+    border-left: 10px solid #fff;
+
+
+}
+.cardd .detailss .titlee small{
+    font-weight: 100;
+    font-size: 0.8em;
+    
+}
+.cardd .detailss h4{
+    font-size: 0.9em;
+
+}
+.cardd .detailss .description p{
+    font-size: 0.8em;
+    font-weight: 200;
+
+}
+.cardd .detailss .types ul{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.cardd .detailss .types ul li{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8em;
+    border:  solid 1px #fff;
+    padding: 0.6em;
+}
+
+.cardd .detailss .types ul li:hover{
+    background-color: #fff;
+    color: #003366;
+}
+.cardd .detailss .buy{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cardd .detailss .buy .precio{
+    font-size: 1.6em;
+}
+
+.cardd .detailss .buy .bton{
+    background: #fff;
+    padding: 0.5em 0.8em;
+    text-transform: uppercase;
+}
+
+.cardd .detailss .buy .bton a{
+    text-decoration: none;
+    color: #003366;
+    
+}
